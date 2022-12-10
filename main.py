@@ -8,18 +8,30 @@ parser.add_argument('-v', '--version', help="Version of the Docker image", defau
 parser.add_argument('-b', '--build', help="Build the Dockerfile after generation", action='store_true', default=False, required=False)
 args = parser.parse_args()
 
-v = "0.1.0"
+v = "0.1.1"
+
+ryuk = \
+f"""
+ _____ _     _       _                       _   _____  _     _____ 
+/  ___| |   (_)     (_)                     (_) /  __ \| |   |_   _|
+\ `--.| |__  _ _ __  _  __ _  __ _ _ __ ___  _  | /  \/| |     | |  
+ `--. \ '_ \| | '_ \| |/ _` |/ _` | '_ ` _ \| | | |    | |     | |  
+/\__/ / | | | | | | | | (_| | (_| | | | | | | | | \__/\| |_____| |_ 
+\____/|_| |_|_|_| |_|_|\__, |\__,_|_| |_| |_|_|  \____/\_____/\___/ 
+                        __/ |                                       
+                       |___/                                        
+
+Shinigami CLI (created by Stience) | v{v}
+Learn More: https://github.com/stience
+"""
 
 class CLI:
     def run() -> Shinigami:
-
-        print(f"\nStience | v{v} (https://github.com/stience)\n")
-
         if args.build:
             return Shinigami(lang_os=str(args.image), version=str(args.version), build={args.build})
         else:
             return Shinigami(lang_os=str(args.image), version=str(args.version))
 
 if __name__ == '__main__':
+    print(ryuk)
     CLI.run().generate_dockerfile()
-    print("The Dockerfile should now be in the current working directory!\n")
