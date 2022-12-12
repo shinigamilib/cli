@@ -1,3 +1,9 @@
+"""
+    Owner: CyberSuki (https://github.com/cybersuki)
+    Project: Shinigami CLI
+    License: BSD 2-Clause
+"""
+
 import argparse
 
 from shinigami.shinigami import Shinigami
@@ -8,7 +14,7 @@ parser.add_argument('-v', '--version', help="Version of the Docker image", defau
 parser.add_argument('-b', '--build', help="Build the Dockerfile after generation", action='store_true', default=False, required=False)
 args = parser.parse_args()
 
-v = "0.1.1"
+v = "0.1.2"
 
 ryuk = \
 f"""
@@ -21,8 +27,8 @@ f"""
                         __/ |                                       
                        |___/                                        
 
-Shinigami CLI (created by Stience) | v{v}
-Learn More: https://github.com/stience
+Shinigami CLI | v{v}
+Owner: https://github.com/cybersuki
 """
 
 class CLI:
