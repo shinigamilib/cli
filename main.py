@@ -1,5 +1,5 @@
 """
-    Owner: CyberSuki (https://github.com/cybersuki)
+    Owner: Hifumi1337 (https://github.com/hifumi1337)
     Project: Shinigami CLI
     License: BSD 2-Clause
 """
@@ -16,7 +16,7 @@ args = parser.parse_args()
 
 v = "0.1.2"
 
-ryuk = \
+banner = \
 f"""
  _____ _     _       _                       _   _____  _     _____ 
 /  ___| |   (_)     (_)                     (_) /  __ \| |   |_   _|
@@ -28,7 +28,7 @@ f"""
                        |___/                                        
 
 Shinigami CLI | v{v}
-Owner: https://github.com/cybersuki
+Owner: https://github.com/hifumi1337
 """
 
 class CLI:
@@ -39,5 +39,5 @@ class CLI:
             return Shinigami(lang_os=str(args.image), version=str(args.version))
 
 if __name__ == '__main__':
-    print(ryuk)
+    print(banner)
     CLI.run().generate_dockerfile()
