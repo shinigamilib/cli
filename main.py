@@ -1,5 +1,5 @@
 """
-    Owner: Hifumi1337 (https://github.com/hifumi1337)
+    Owner: Shinigamilib (https://github.com/shinigamilib)
     Project: Shinigami CLI
     License: BSD 2-Clause
 """
@@ -28,7 +28,7 @@ f"""
                        |___/                                        
 
 Shinigami CLI | v{v}
-Owner: https://github.com/hifumi1337
+Owner: https://github.com/shinigamilib
 """
 
 class CLI:

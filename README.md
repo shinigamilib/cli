@@ -4,7 +4,7 @@
     Shinigami CLI
 </h1>
 
-Basic CLI showing off the [Shinigami](https://github.com/hifumi1337/shinigami) library
+Basic CLI showing off the [Shinigami](https://github.com/shinigamilib) library
 
 Available commands:
 ```
