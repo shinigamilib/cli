@@ -1,5 +1,5 @@
 """
-    Owner: Shinigamilib (https://github.com/shinigamilib)
+    Owner: azazelm3dj3d (https://github.com/azazelm3dj3d)
     Project: Shinigami CLI
     License: BSD 2-Clause
 """
@@ -28,7 +28,7 @@ f"""
                        |___/                                        
 
 Shinigami CLI | v{v}
-Owner: https://github.com/shinigamilib
+Owner: https://github.com/azazelm3dj3d
 """
 
 class CLI:
@@ -36,7 +36,7 @@ class CLI:
         if args.build:
             return Shinigami(lang_os=str(args.image), version=str(args.version), build={args.build})
         else:
-            return Shinigami(lang_os=str(args.image), version=str(args.version))
+            return Shinigami(lang_os=str(args.image), version=str(args.version), verbose=True)
 
 if __name__ == '__main__':
     print(banner)

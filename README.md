@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src=".github/assets/shinigamicli_logo.jpg" />
+    <img src="assets/shinigamicli_logo.jpg" />
     <br />
     Shinigami CLI
 </h1>
